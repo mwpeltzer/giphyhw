@@ -1,5 +1,4 @@
 
-
 // 1) create a function that dynamically creates a button with an on click
 
 // 2) Make an ajax call to the giphy api 
@@ -48,7 +47,7 @@ $(document).on("click", ".athlete", function(e){
 		
 		var type = $(this).attr("data-type");
 
-		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=dc6zaTOxFJmzC&limit=10";
+		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=3LWiOXNjo8MiOHk2xMToMJOEmJz7QeA1";
 
 		$.ajax({
 			method: "GET",
@@ -74,10 +73,7 @@ $(document).on("click", ".athlete", function(e){
 
 				var athleteImage = $("<img>");
 				athleteImage.attr("src", animated);
-				athleteImage.attr("data-still", still);
-				athleteImage.attr("data-animate", animated);
-				athleteImage.attr("data-state", still);
-				athleteImage.addClass("athlete-image");
+				
 
 				athleteDiv.append(p);
 				athleteDiv.append(athleteImage);
